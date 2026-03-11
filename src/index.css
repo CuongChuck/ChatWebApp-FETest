@@ -1,0 +1,13 @@
+:root {
+  --secondary-color: #d9d9f5;
+}
+
+.nav-col {
+  background-color: var(--secondary-color);
+  font-size: small;
+}
+
+.avatar {
+  height: 100px;
+  width: 100px;
+}
