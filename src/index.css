@@ -1,13 +1,71 @@
 :root {
-  --secondary-color: #d9d9f5;
+  --secondary-bg-color: #d9d9f5;
+  --hover-secondary-color: #d4d4f3;
+  --primary-bg-color: #f4f4fe;
+  --in-msg-color: #e9e8ed;
+  --out-msg-color: #318beb;
 }
 
 .nav-col {
-  background-color: var(--secondary-color);
+  background-color: var(--secondary-bg-color);
   font-size: small;
+}
+
+.page {
+  background-color: var(--primary-bg-color);
+}
+
+.search {
+  background-color: var(--primary-bg-color);
+}
+
+.search:focus, .chat:focus {
+  border-color: transparent;
+  outline: 0;
 }
 
 .avatar {
   height: 100px;
   width: 100px;
+}
+
+.chat-avatar {
+  height: 40px;
+  width: 40px;
+}
+
+.nav-item:hover, .nav-selected {
+  color: blue;
+  background-color: var(--hover-secondary-color);
+  cursor: pointer;
+}
+
+.page-grid {
+  grid-template-columns: 1fr 2fr;
+}
+
+.chattab {
+  transition: transform .2s;
+}
+
+.chattab:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.in-msg {
+  background-color: var(--in-msg-color);
+}
+
+.out-msg {
+  background-color: var(--out-msg-color);
+}
+
+.msg-info {
+  width: fit-content;
+}
+
+.msg-wrapper {
+  width: fit-content;
+  max-width: 45%;
 }
